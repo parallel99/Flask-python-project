@@ -1,0 +1,10 @@
+Install all of them:
+pip install flask
+pip install flask-bcrypt
+pip install -U Flask-SQLAlchemy
+pip install Flask-Pure
+pip install Flask-WTF
+pip install email-validator
+pip install flask_login
+
+
