@@ -10,6 +10,8 @@ pip install Flask-Assets
 pip install psycopg2
 pip install Flask-Migrate
 pip install Flask-Script
+pip install pipreqs
+pip install gunicorn
 
 
 #required manage.py#
@@ -17,3 +19,5 @@ create tables with ORM:
 python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
+
+gipreqs . #create requirements.txt
