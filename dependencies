@@ -11,6 +11,7 @@ pip install psycopg2
 pip install Flask-Migrate
 pip install Flask-Script
 pip install pipreqs
+pip install python-dotenv
 pip install gunicorn
 
 

@@ -11,8 +11,8 @@ app = Flask(__name__)
 #engine = create_engine('postgresql://scott:tiger@localhost/mydatabase')
 
 # Configurations
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
-app.config['SECRET_KEY'] = '23e11ad5d944bb0f0ec7c01c'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 # Database
 db = SQLAlchemy(app)
