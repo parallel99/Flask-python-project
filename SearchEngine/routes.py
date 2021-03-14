@@ -1,7 +1,9 @@
 from SearchEngine import app
-from flask import render_template, redirect, url_for, flash, get_flashed_messages
-from SearchEngine.model.models import Item, User
-from SearchEngine.controller.forms import RegisterForm, LoginForm
+from flask import render_template, redirect, url_for, flash
+from SearchEngine.model.ItemModel import Item
+from SearchEngine.model.UserModel import User
+from SearchEngine.form.SignUpForm import RegisterForm
+from SearchEngine.form.SignInForm import LoginForm
 from SearchEngine import db
 from flask_login import login_user, logout_user
 

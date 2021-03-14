@@ -6,8 +6,11 @@ from flask_assets import Environment, Bundle
 
 app = Flask(__name__)
 
+
+#engine = create_engine('postgresql://scott:tiger@localhost/mydatabase')
+
 # Configurations
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///market.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:admin@localhost/python-flask'
 app.config['SECRET_KEY'] = '23e11ad5d944bb0f0ec7c01c'
 
 # Database

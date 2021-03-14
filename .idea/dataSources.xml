@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:sqlite:C:\Users\hajas\PycharmProjects\Flask\SearchEngine\market.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="market [3]" uuid="a54a1100-bb1c-4525-9b75-37fb073189de">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\PycharmProjects\Flask\SearchEngine\market.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
