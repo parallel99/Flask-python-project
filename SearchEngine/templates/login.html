@@ -6,6 +6,7 @@ Login Page
 <h1>Login form</h1>
 <div class="container">
     <form class="form-singin p-5" method="post">
+        {{ form.csrf_token }}
 
         {{ form.username.label() }}
         {{ form.username(class="form-control", placeholder="User Name") }}

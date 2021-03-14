@@ -6,7 +6,7 @@ Register Page
 <h1>Register form</h1>
 <div class="container">
     <form class="form-register p-5" method="post">
-        {{ form.hidden_tag() }}
+        {{ form.csrf_token }}
         {{ form.username.label(class="py-1") }}
         {{ form.username(class="form-control", placeholder="User Name") }}
         {{ form.email.label(class="py-1") }}
