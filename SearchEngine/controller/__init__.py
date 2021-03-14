@@ -1,0 +1,2 @@
+from SearchEngine.controller.RegisterPageController import RegisterController
+from SearchEngine.controller.LoginPageController import LoginController
