@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_assets import Environment, Bundle
+from SearchEngine import routes
 
 app = Flask(__name__)
 
@@ -29,4 +30,5 @@ assets.url = app.static_url_path
 scss = Bundle('scss/main.scss', 'scss/secondary.scss', filters='pyscss', output='css/style.css')
 assets.register('scss_all', scss)
 
-from SearchEngine import routes
+if __name__ == '__main__':
+    app.run()
