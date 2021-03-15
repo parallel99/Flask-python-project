@@ -21,5 +21,3 @@ create tables with ORM:
 python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
-
-gipreqs . #create requirements.txt
