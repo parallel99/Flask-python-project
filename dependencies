@@ -12,7 +12,8 @@ pip install Flask-Migrate
 pip install Flask-Script
 pip install pipreqs
 pip install python-dotenv
-pip install gunicorn
+pip install requests[security] flask gunicorn # install gunicorn
+pip freeze > requirements.txt # Installed libraries import for heroku
 
 
 #required manage.py#
