@@ -1,0 +1,2 @@
+from YourArchives.controller.RegisterPageController import RegisterController
+from YourArchives.controller.LoginPageController import LoginController

@@ -1,0 +1,58 @@
+$orange-gradient: linear-gradient(to right, #e43a15, #e65245);
+
+.navbar {
+  $white-decor-width: 240px;
+
+  background: $orange-gradient !important;
+
+  .nav-link {
+    color: white !important;
+    border-radius: 10px;
+    padding: 10px !important;
+    transition: background-color 0.3s;
+  }
+
+  .navbar-right-font{
+    color: black !important;
+  }
+
+  @media screen and (max-width: 991px) {
+    .navbar-right-font{
+      color: white !important;
+    }
+  }
+
+  .nav-item, .navbar-toggler{
+    z-index: 2 !important;
+  }
+
+  .nav-link:hover {
+    color: #faf6f2 !important;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-white-decor {
+    height: 100%;
+    background: white;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    border-radius: 100% 0 0 40%;
+    width: $white-decor-width;
+    z-index: 1;
+  }
+
+  .decor-layer2 {
+    background: rgba(255,255,255,0.5);
+    border-radius: 90% 0 0 50%;
+    width: $white-decor-width + 10px;
+  }
+
+  .decor-layer3 {
+    background: rgba(255,255,255,0.3);
+    border-radius: 60% 0 0 40%;
+    width: $white-decor-width + 20px;
+  }
+}

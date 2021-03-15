@@ -1,6 +1,6 @@
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
-from SearchEngine import app, db
+from YourArchives import app, db
 
 app.config.from_object('venv')
 
