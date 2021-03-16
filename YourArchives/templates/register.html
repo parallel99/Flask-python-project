@@ -3,20 +3,41 @@
 Register Page
 {% endblock %}
 {% block content %}
-<h1>Register form</h1>
-<div class="container">
-    <form class="form-register p-5" method="post">
-        {{ form.csrf_token }}
-        {{ form.username.label(class="py-1") }}
-        {{ form.username(class="form-control", placeholder="User Name") }}
-        {{ form.email.label(class="py-1") }}
-        {{ form.email(class="form-control", placeholder="Email") }}
-        {{ form.password1.label(class="py-1") }}
-        {{ form.password1(class="form-control", placeholder="Password") }}
-        {{ form.password2.label(class="py-1") }}
-        {{ form.password2(class="form-control", placeholder="Password") }}
 
-        {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
-    </form>
+<div class="row my-4">
+    <div class="col-md-6 m-auto">
+        <div class="login-form m-auto">
+            <h1 class="text-center pt-4 pb-2">
+                Sign Up
+            </h1>
+            <hr>
+            <form class="px-4 pb-4" method="post">
+                {{ form.csrf_token }}
+                {{ form.username.label(class="py-1") }}
+                {{ form.username(class="form-control mb-2", placeholder="User Name") }}
+                {{ form.email.label(class="py-1") }}
+                {{ form.email(class="form-control mb-2", placeholder="Email") }}
+                {{ form.password1.label(class="py-1") }}
+                {{ form.password1(class="form-control mb-2", placeholder="Password") }}
+                {{ form.password2.label(class="py-1") }}
+                {{ form.password2(class="form-control", placeholder="Password") }}
+
+                {{ form.submit(class="btn btn-lg btn-block btn-primary mt-3") }}
+            </form>
+        </div>
+    </div>
+    <div class="col col-md-6 slider-container m-auto">
+        {% with %}
+        {% set images_url =
+        [
+        "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcS8BCFhdkX3FHI9jU3cAS-T0JT7vRXgItqvI1IIsrF4q-MbzncbtGnLtvGGGhbsG0Wg6XvBOm1fFnSLMNCv3x0",
+        "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSmix0yTqHfemFI2OCIx1V2QlwRhTl6iQ1EqTWzesK267M9RD2Sr8MKvubG09PCz8Vv3BBHjDEPALf1SqI4Uqs",
+        "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcTVJSrwLal8dZf42wKNVfXGOxf_3eTdHKuyCmEu9TUYA7EpBx6BDPKK_vBE_SHxodc6r04x_rxWSe-bgTYRNjo"
+        ]
+        %}
+        {% include 'imageSlider.html' %}
+        {% endwith %}
+    </div>
 </div>
+
 {% endblock %}
