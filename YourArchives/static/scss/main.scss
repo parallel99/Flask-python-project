@@ -56,7 +56,7 @@ $blue-gradient2: linear-gradient(to right, #4286f4, #373B44);
 
   /* Navbar change layout for the mobile look */
   @media screen and (max-width: 991px) {
-    $white-decor-width: $white-decor-width;
+    $white-decor-width: $white-decor-width - 100px;
 
     .navbar-right-font{
       color: white !important;

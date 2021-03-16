@@ -37,11 +37,11 @@
                     .navbar .navbar-white-decor {
                       top: 60px;
                       height: calc(100% - 60px);
-                      width: 240px;   }
+                      width: 140px;   }
                       .navbar .decor-layer2 {
-                        width: 260px;   }
+                        width: 160px;   }
                         .navbar .decor-layer3 {
-                          width: 280px;   }
+                          width: 180px;   }
 }
 
 
