@@ -119,10 +119,6 @@ body {
   text-shadow: $dark-blue 0 0 20px;
 }
 
-.container {
-  background: green;
-}
-
 .row{
   --bs-gutter-x: 0;
 }
@@ -139,12 +135,15 @@ body {
   .slider-container {
     width: 100%;
     padding: 50px 200px 0 200px;
+
+    .carousel .carousel-inner .carousel-item img{
+      border-radius: 18px !important;
+    }
   }
 }
 
 @media screen and (max-width: 850px) {
   .slider-container {
-    width: 100%;
     padding: 50px 10px 0 10px;
   }
 }

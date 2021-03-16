@@ -71,27 +71,25 @@
                 background: #0088d6;
                 text-shadow: #4286f4 0 0 20px; }
 
-                .container {
-                  background: green; }
+                .row {
+                  --bs-gutter-x: 0; }
 
-                  .row {
-                    --bs-gutter-x: 0; }
+                  .login-form {
+                    max-width: 500px; }
 
-                    .login-form {
-                      max-width: 500px; }
+                    .slider-container {
+                      padding: 4%; }
 
-                      .slider-container {
-                        padding: 4%; }
-
-                        @media screen and (max-width: 1000px) {
-                          .slider-container {
-                            width: 100%;
-                            padding: 50px 200px 0 200px;   }
+                      @media screen and (max-width: 1000px) {
+                        .slider-container {
+                          width: 100%;
+                          padding: 50px 200px 0 200px;   }
+                          .slider-container .carousel .carousel-inner .carousel-item img {
+                            border-radius: 18px !important;   }
 }
 
   @media screen and (max-width: 850px) {
     .slider-container {
-      width: 100%;
       padding: 50px 10px 0 10px;   }
 }
 
