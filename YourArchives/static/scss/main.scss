@@ -1,9 +1,13 @@
 $orange-gradient: linear-gradient(to right, #e43a15, #e65245);
+$dark: #373B44;
+$blue-gradient1: -webkit-linear-gradient(to right, #4286f4, #373B44);
+$blue-gradient2: linear-gradient(to right, #4286f4, #373B44);
+
 
 .navbar {
   $white-decor-width: 240px;
 
-  background: $orange-gradient !important;
+  background: $blue-gradient2 !important;
 
   .nav-link {
     color: white !important;
@@ -14,12 +18,6 @@ $orange-gradient: linear-gradient(to right, #e43a15, #e65245);
 
   .navbar-right-font{
     color: black !important;
-  }
-
-  @media screen and (max-width: 991px) {
-    .navbar-right-font{
-      color: white !important;
-    }
   }
 
   .nav-item, .navbar-toggler{
@@ -54,5 +52,28 @@ $orange-gradient: linear-gradient(to right, #e43a15, #e65245);
     background: rgba(255,255,255,0.3);
     border-radius: 60% 0 0 40%;
     width: $white-decor-width + 20px;
+  }
+
+  /* Navbar change layout for the mobile look */
+  @media screen and (max-width: 991px) {
+    $white-decor-width: $white-decor-width;
+
+    .navbar-right-font{
+      color: white !important;
+    }
+
+    .navbar-white-decor{
+      top: 60px;
+      height: calc(100% - 60px);
+      width: $white-decor-width;
+    }
+
+    .decor-layer2 {
+      width: $white-decor-width + 20px;
+    }
+
+    .decor-layer3 {
+      width: $white-decor-width + 40px;
+    }
   }
 }
