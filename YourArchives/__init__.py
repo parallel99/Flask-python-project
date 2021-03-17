@@ -23,7 +23,7 @@ login_manager = LoginManager(app)
 # scss compiler to css
 assets = Environment(app)
 assets.url = app.static_url_path
-scss = Bundle('scss/main.scss', 'scss/secondary.scss', filters='pyscss', output='css/style.css')
+scss = Bundle('scss/main.scss', 'scss/ImageContainer.scss', filters='pyscss', output='css/style.css')
 assets.register('scss_all', scss)
 
 from YourArchives import routes

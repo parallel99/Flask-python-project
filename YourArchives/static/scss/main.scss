@@ -132,9 +132,14 @@ body {
   max-width: 500px;
   display: block;
   animation: fadeInFromNone 0.6s ease-out;
+
+  div {
+    padding: 2px;
+    background: $blue-gradient2;
+  }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .login-form {
     box-shadow: none !important;
   }
@@ -179,3 +184,4 @@ body {
     padding: 50px 10px 0 10px;
   }
 }
+

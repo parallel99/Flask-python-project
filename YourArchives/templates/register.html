@@ -10,10 +10,10 @@ Register Page
             <h1 class="text-center pt-4 pb-2">
                 Sign Up
             </h1>
-            <hr>
+            <div></div>
             <form class="px-4 pb-4" method="post">
                 {{ form.csrf_token }}
-                {{ form.username.label(class="py-1") }}
+                {{ form.username.label(class="py-1 mt-4") }}
                 {{ form.username(class="form-control mb-2", placeholder="User Name") }}
                 {{ form.email.label(class="py-1") }}
                 {{ form.email(class="form-control mb-2", placeholder="Email") }}

@@ -1,9 +1,33 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    Home Page
+Home Page
+{% endblock %}
+{% block content %}
+<h1>Home Page</h1>
+<div class="m-image-container">
+    <div class="row row-cols-4">
+        <div class="col">
+            <div class="bg-primary">
+                Column
+            </div>
+        </div>
+        <div class="col">
+            <div class="bg-dark">
+                Column
+            </div>
+        </div>
+        <div class="col">
+            <div class="bg-info">
+                Column
+            </div>
+        </div>
+        <div class="col">
+            <div class="bg-secondary" style="background: url('http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcS8BCFhdkX3FHI9jU3cAS-T0JT7vRXgItqvI1IIsrF4q-MbzncbtGnLtvGGGhbsG0Wg6XvBOm1fFnSLMNCv3x0'); object-fit: scale-down;">
+                s
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
-{% block content %}
-    <h1>Home Page</h1>
-{% endblock %}
