@@ -7,14 +7,18 @@ def load_user(user_id):
     return User.query.get(int(user_id))
 
 class User(db.Model, UserMixin):
-    __tablename__ = 'user'
+    __tablename__ = 'app_users'
 
-    id = db.Column(db.Integer(), primary_key=True)
+    id = db.Column(db.Integer(), primary_key=True, name="user_id")
     username = db.Column(db.String(length=30), nullable=False, unique=True)
     email = db.Column(db.String(length=60), nullable=False, unique=True)
     password_hash = db.Column(db.String(length=128), nullable=False)
-    budget = db.Column(db.Integer(), nullable=False, default=1000)
-    items = db.relationship('Item', backref='owned_user', lazy=True)
+    created_at = db.Column(db.DateTime(), nullable=False)
+    updated_at = db.Column(db.DateTime())
+    is_active = db.Column(db.Integer(), default=1)
+    questions = db.relationship('Question', lazy=True)
+    answers = db.relationship('Answer', lazy=True)
+    roles = db.relationship('Role', secondary='app_user_roles', backref=db.backref('role', lazy='dynamic'))
 
     @property
     def password(self):
