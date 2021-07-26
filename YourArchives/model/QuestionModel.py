@@ -12,4 +12,4 @@ class Question(db.Model):
     is_active = db.Column(db.Integer())
     answers = db.relationship('Answer', lazy=True)
     tags = db.relationship('Tag', lazy=True)
-    categories = db.relationship('QuestionCategories', secondary='app_question_categories')
+    categories = db.relationship('Category', secondary='app_question_categories')
