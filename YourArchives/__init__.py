@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
-# Database
+# Database (ORM)
 db = SQLAlchemy(app)
 
 # Password Encrypt

@@ -1,10 +1,9 @@
 from YourArchives import app
 from flask import render_template, redirect, url_for, flash
-from YourArchives.model import User, Item
 from YourArchives.form import RegisterForm, LoginForm
 from YourArchives.controller import RegisterController, LoginController
-from YourArchives import db
 from flask_login import logout_user
+
 
 # @app.route('/')
 # This name is decorator and you can find it: https://flask.palletsprojects.com/en/1.1.x/patterns/viewdecorators/
@@ -14,10 +13,11 @@ from flask_login import logout_user
 def home_page():
     return render_template('home.html')
 
-@app.route('/market')
-def market_page():
-    items = Item.query.all();
-    return render_template('market.html', items=items)
+#@app.route('/market')
+#def market_page():
+    #items = Item.query.all();
+    #return render_template('market.html', items=items)
+    #return True
 
 @app.route('/register', methods=['GET', 'POST'])
 def register_page():

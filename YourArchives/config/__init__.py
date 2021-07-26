@@ -1,0 +1,1 @@
+from YourArchives.config.RoleAppInitConfig import RoleConfig

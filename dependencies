@@ -20,3 +20,8 @@ create tables with ORM:
 python manage.py db init
 python manage.py db migrate
 python manage.py db upgrade
+
+#something went wrong in migrate, try this#
+python manage.py db stamp head
+python manage.py db migrate
+python manage.py db upgrade
